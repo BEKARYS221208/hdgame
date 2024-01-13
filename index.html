@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>название сайта</title>
+	<style type="text/css">
+		.box1 {
+			background-image: url(2.png);
+			background-size: 100% 100%;
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			top: 400px;
+			left: 150px;
+		}
+
+		.box2 {
+			background-image: url(3.png);
+			background-size: 100% 100%;
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			top: 820px;
+			left: 1800px;
+		}
+
+		.box3 {
+			background-image: url(4.png);
+			background-size: 100% 100%;
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			top: 200px;
+			left: 500px;
+		}
+
+		.box4 {
+			background-image: url(5.png);
+			background-size: 100% 100%;
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			top: 850px;
+			left: 400px;
+		}
+
+		.box5 {
+			background-image: url(6.png);
+			background-size: 100% 100%;
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			top: 200px;
+			left: 1300px;
+		}
+
+		.panel {
+			background: orange;
+			height: 300px;
+			width: 200px;
+		}
+
+		.bg {
+			background-image: url(1.jpg);
+			background-size: cover;
+		}
+
+	</style>
+</head>
+<body class="bg">
+
+	<div class="panel">
+		<h1>Очки</h1>
+		<h1 class="score">0</h1>
+		<p class="redbox">Яблоко</p>
+		<p class="bluebox">Бабочка</p>
+		<p class="yellowbox">Птица</p>
+		<p class="purplebox">Цветок</p>
+		<p class="greenbox">Листочек</p>
+	</div>
+
+	<div class="box1">	
+	</div>
+
+	<div class="box2">		
+	</div>
+
+	<div class="box3">		
+	</div>
+
+	<div class="box4">
+	</div>
+
+	<div class="box5">	
+	</div>
+
+
+
+<script type="text/javascript">
+	let number = 0
+
+	document.querySelector(".box1").onclick = function() {
+		number = number + 1;
+		document.querySelector(".score").innerHTML = number
+		document.querySelector(".box1").style.display = "none"
+		document.querySelector(".redbox").style.textDecoration = "line-through"
+	}
+
+	document.querySelector(".box2").onclick = function() {
+		number = number + 1;
+		document.querySelector(".score").innerHTML = number
+		document.querySelector(".box2").style.display = "none"
+		document.querySelector(".bluebox").style.textDecoration = "line-through"
+	}
+
+	document.querySelector(".box3").onclick = function() {
+		number = number + 1;
+		document.querySelector(".score").innerHTML = number
+		document.querySelector(".box3").style.display = "none"
+		document.querySelector(".yellowbox").style.textDecoration = "line-through"
+	}
+
+	document.querySelector(".box4").onclick = function() {
+		number = number + 1;
+		document.querySelector(".score").innerHTML = number
+		document.querySelector(".box4").style.display = "none"
+		document.querySelector(".purplebox").style.textDecoration = "line-through"
+	}
+
+	document.querySelector(".box5").onclick = function() {
+		number = number + 1;
+		document.querySelector(".score").innerHTML = number
+		document.querySelector(".box5").style.display = "none"
+		document.querySelector(".greenbox").style.textDecoration = "line-through"
+	}
+
+
+	
+
+</script>
+</body>
+</html>
